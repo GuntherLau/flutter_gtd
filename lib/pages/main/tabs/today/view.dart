@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gtd/pages/main/widgets/main_drawer_controller.dart';
 import 'package:notifications/main.dart';
 import 'package:theming/main.dart';
 
+import '../../widgets/main_drawer_controller.dart';
 import 'logic.dart';
 
 class TabTodayComponent extends StatefulWidget {

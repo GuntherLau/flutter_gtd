@@ -1,13 +1,12 @@
 import 'package:common/main.dart';
 import 'package:flutter/material.dart';
-import 'package:gtd/main.reflectable.dart';
-import 'package:gtd/model/task.dart';
 import 'package:notifications/main.dart';
 import 'package:reflection/main.dart';
 import 'package:state_management/main.dart';
 import 'package:storage/main.dart';
 import 'package:theming/main.dart';
 
+import 'main.reflectable.dart';
 import 'routes/app_routes.dart';
 
 const reflectorModel = ReflectorModel();

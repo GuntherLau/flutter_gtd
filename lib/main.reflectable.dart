@@ -2,8 +2,8 @@
 // https://github.com/dart-lang/reflectable.
 import 'dart:core';
 import 'main.dart' as prefix3;
-import 'package:gtd/model/task.dart' as prefix1;
-import 'package:gtd/model/user.dart' as prefix2;
+import 'package:flutter_gtd/model/task.dart' as prefix1;
+import 'package:flutter_gtd/model/user.dart' as prefix2;
 import 'package:json_annotation/src/json_serializable.dart' as prefix4;
 import 'package:reflection/src/model/reflectable_model.dart' as prefix0;
 
@@ -43,18 +43,18 @@ final _data = <r.Reflectable, r.ReflectorData>{
               12,
               13,
               17,
-              46,
+              18,
               47,
-              48
+              48,
+              49
             ],
             const <int>[
-              49,
               50,
+              18,
               51,
               52,
               53,
               17,
-              18,
               19,
               20,
               21,
@@ -81,7 +81,8 @@ final _data = <r.Reflectable, r.ReflectorData>{
               42,
               43,
               44,
-              45
+              45,
+              46
             ],
             const <int>[],
             -1,
@@ -140,7 +141,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
             1,
             const prefix0.ReflectorModel(),
             const <int>[14, 15, 16, 54, 55, 62, 63],
-            const <int>[49, 55, 51, 52, 53, 54, 56, 57, 58, 59, 60, 61],
+            const <int>[50, 55, 51, 52, 53, 54, 56, 57, 58, 59, 60, 61],
             const <int>[],
             -1,
             {},
@@ -206,34 +207,45 @@ final _data = <r.Reflectable, r.ReflectorData>{
             const <int>[],
             const prefix0.ReflectorModel(),
             const <Object>[override]),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 0, 18),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 0, 19),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 1, 20),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 1, 21),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 2, 22),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 2, 23),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 3, 24),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 3, 25),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 4, 26),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 4, 27),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 5, 28),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 5, 29),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 6, 30),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 6, 31),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 7, 32),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 7, 33),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 8, 34),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 8, 35),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 9, 36),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 9, 37),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 10, 38),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 10, 39),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 11, 40),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 11, 41),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 12, 42),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 12, 43),
-        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 13, 44),
-        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 13, 45),
+        r.MethodMirrorImpl(
+            r'toString',
+            2097154,
+            0,
+            -1,
+            6,
+            6,
+            const <int>[],
+            const <int>[],
+            const prefix0.ReflectorModel(),
+            const <Object>[override]),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 0, 19),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 0, 20),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 1, 21),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 1, 22),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 2, 23),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 2, 24),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 3, 25),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 3, 26),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 4, 27),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 4, 28),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 5, 29),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 5, 30),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 6, 31),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 6, 32),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 7, 33),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 7, 34),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 8, 35),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 8, 36),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 9, 37),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 9, 38),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 10, 39),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 10, 40),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 11, 41),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 11, 42),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 12, 43),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 12, 44),
+        r.ImplicitGetterMirrorImpl(const prefix0.ReflectorModel(), 13, 45),
+        r.ImplicitSetterMirrorImpl(const prefix0.ReflectorModel(), 13, 46),
         r.MethodMirrorImpl(
             r'',
             0,
@@ -249,10 +261,8 @@ final _data = <r.Reflectable, r.ReflectorData>{
             const <int>[14], const prefix0.ReflectorModel(), const []),
         r.MethodMirrorImpl(r'defaultValue', 0, 0, -1, 0, 0, const <int>[],
             const <int>[], const prefix0.ReflectorModel(), const []),
-        r.MethodMirrorImpl(r'==', 2097154, -1, -1, 6, 6, const <int>[],
+        r.MethodMirrorImpl(r'==', 2097154, -1, -1, 7, 7, const <int>[],
             const <int>[29], const prefix0.ReflectorModel(), const []),
-        r.MethodMirrorImpl(r'toString', 2097154, -1, -1, 7, 7, const <int>[],
-            const <int>[], const prefix0.ReflectorModel(), const []),
         r.MethodMirrorImpl(
             r'noSuchMethod',
             524290,
@@ -284,8 +294,8 @@ final _data = <r.Reflectable, r.ReflectorData>{
             2097154,
             1,
             -1,
-            7,
-            7,
+            6,
+            6,
             const <int>[],
             const <int>[],
             const prefix0.ReflectorModel(),
@@ -305,7 +315,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'id',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -317,7 +327,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'name',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -329,7 +339,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'repeatType',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -341,7 +351,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'jsonWeek',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -353,7 +363,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'weekRandom',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -365,7 +375,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'jsonMonth',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -377,7 +387,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'monthRandom',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -389,7 +399,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'needRemind',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -401,7 +411,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'alarmIndex',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -413,7 +423,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'jsonRemind',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -425,7 +435,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'createTime',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -437,7 +447,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'finishTime',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -449,7 +459,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'finishType',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -461,7 +471,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'dailyTimes',
             67253254,
-            46,
+            47,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -473,7 +483,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'json',
             151126022,
-            47,
+            48,
             const prefix0.ReflectorModel(),
             -1,
             4,
@@ -485,7 +495,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_id',
             67240038,
-            19,
+            20,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -497,7 +507,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_name',
             67240038,
-            21,
+            22,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -509,7 +519,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_repeatType',
             67240038,
-            23,
+            24,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -521,7 +531,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_jsonWeek',
             67240038,
-            25,
+            26,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -533,7 +543,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_weekRandom',
             67240038,
-            27,
+            28,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -545,7 +555,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_jsonMonth',
             67240038,
-            29,
+            30,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -557,7 +567,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_monthRandom',
             67240038,
-            31,
+            32,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -569,7 +579,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_needRemind',
             67240038,
-            33,
+            34,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -581,7 +591,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_alarmIndex',
             67240038,
-            35,
+            36,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -593,7 +603,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_jsonRemind',
             67240038,
-            37,
+            38,
             const prefix0.ReflectorModel(),
             -1,
             2,
@@ -605,7 +615,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_createTime',
             67240038,
-            39,
+            40,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -617,7 +627,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_finishTime',
             67240038,
-            41,
+            42,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -629,7 +639,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_finishType',
             67240038,
-            43,
+            44,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -641,7 +651,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'_dailyTimes',
             67240038,
-            45,
+            46,
             const prefix0.ReflectorModel(),
             -1,
             3,
@@ -653,7 +663,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r.ParameterMirrorImpl(
             r'other',
             134348806,
-            49,
+            50,
             const prefix0.ReflectorModel(),
             -1,
             10,
@@ -766,8 +776,8 @@ final _data = <r.Reflectable, r.ReflectorData>{
         int,
         const m.TypeValue<Map<String, dynamic>>().type,
         Map,
-        bool,
         String,
+        bool,
         int,
         Type,
         Object,
@@ -827,7 +837,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
       <m.LibraryMirror>[
         r.LibraryMirrorImpl(
             r'',
-            Uri.parse('package:gtd/model/task.dart'),
+            Uri.parse('package:flutter_gtd/model/task.dart'),
             const prefix0.ReflectorModel(),
             const <int>[],
             {},
@@ -836,7 +846,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
             null),
         r.LibraryMirrorImpl(
             r'',
-            Uri.parse('package:gtd/model/user.dart'),
+            Uri.parse('package:flutter_gtd/model/user.dart'),
             const prefix0.ReflectorModel(),
             const <int>[],
             {},

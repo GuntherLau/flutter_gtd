@@ -1,8 +1,8 @@
+import 'package:flutter_gtd/services/extension_sqlite_service.dart';
 import 'package:get/get.dart';
-import 'package:gtd/model/task.dart';
-import 'package:gtd/services/extension_sqlite_service.dart';
 import 'package:storage/main.dart';
 
+import '../../../../model/task.dart';
 import 'state.dart';
 
 class TabTodayLogic extends GetxController {

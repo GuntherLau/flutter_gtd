@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_udid/flutter_udid.dart';
-import 'package:gtd/model/task.dart';
-import 'package:gtd/model/user.dart';
 import 'package:state_management/main.dart';
 import 'package:storage/main.dart';
+
+import '../model/task.dart';
 
 Future<void> showCustomQuickAddTaskSheet(BuildContext context) async {
   double height = 144 + MediaQuery.of(context).padding.bottom;
