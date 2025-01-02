@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gtd/services/task_service.dart';
 import 'package:get/get.dart';
 import 'package:notifications/main.dart';
 import 'package:theming/main.dart';
@@ -59,6 +60,7 @@ class _TabTodayComponentState extends State<TabTodayComponent>
         return ListView.builder(
           itemBuilder: (context, index) {
             return ListTile(
+              onTap: () => TaskService.instance.editTask(state.tasks[index]),
               title: Text(state.tasks[index].name ?? ''),
             );
           },

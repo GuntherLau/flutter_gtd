@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   common:
     path: ../../packages/common
+  common_ui:
+    path: ../../packages/common_ui
   state_management:
     path: ../../packages/state_management
   storage:

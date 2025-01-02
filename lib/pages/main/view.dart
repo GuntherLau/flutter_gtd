@@ -1,5 +1,6 @@
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gtd/services/task_service.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:get/get.dart';
 import 'package:theming/main.dart';
@@ -33,6 +34,7 @@ class _MainPageState extends State<MainPage> {
           borderRadius: 24.0,
           showShadow: true,
           angle: 0,
+          menuBackgroundColor: Colors.grey[900]!,
           drawerShadowsBackgroundColor: Colors.grey,
           slideWidth: MediaQuery.of(context).size.width * 0.65,
         );
@@ -59,7 +61,8 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: _buildBottomNav(context),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          showCustomQuickAddTaskSheet(context);
+          // showCustomQuickAddTaskSheet(context);
+          TaskService.instance.createNewTask();
         },
         child: const Icon(Icons.add),
       ),

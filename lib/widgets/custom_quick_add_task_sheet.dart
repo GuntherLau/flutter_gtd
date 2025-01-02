@@ -90,8 +90,20 @@ class _CustomQuickAddTaskSheetState extends State<CustomQuickAddTaskSheet> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     IconButton(onPressed: () {}, icon: const Icon(Icons.save_rounded)),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.calendar_today)),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.more_time)),
+                    IconButton(onPressed: () {
+                      showDateRangePicker(
+                          context: context,
+                          locale: Get.locale,
+                          firstDate: DateTime(2000, 1, 1),
+                          lastDate: DateTime(2100, 12, 31),
+                      );
+                    }, icon: const Icon(Icons.calendar_today)),
+                    IconButton(onPressed: () {
+                      showTimePicker(
+                        context: context,
+                        initialTime: TimeOfDay.now(),
+                      );
+                    }, icon: const Icon(Icons.more_time)),
                     IconButton(onPressed: () {}, icon: const Icon(Icons.flag)),
                   ],
                 ),
