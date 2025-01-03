@@ -1,5 +1,10 @@
-import 'package:get/get.dart';
+import 'dart:convert';
 
+import 'package:flutter_gtd/services/tag_service.dart';
+import 'package:get/get.dart';
+import 'package:storage/main.dart';
+
+import '../../model/tag_model.dart';
 import 'state.dart';
 
 class TagListLogic extends GetxController {
@@ -9,6 +14,7 @@ class TagListLogic extends GetxController {
   @override
   void onInit() {
     mode = Get.arguments['mode'];
+    state.tags.value = [...TagService.instance.getTags()];
     super.onInit();
   }
 

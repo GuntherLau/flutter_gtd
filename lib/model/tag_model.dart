@@ -6,7 +6,7 @@ part 'tag_model.g.dart';
 
 @reflectorModel
 @JsonSerializable()
-class TagModel {
+class TagModel implements JsonSerializableModel {
 
   String? name;
   String? color;

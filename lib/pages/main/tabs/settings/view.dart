@@ -36,7 +36,7 @@ class _TabSettingsComponentState extends State<TabSettingsComponent> with Custom
         GroupSettings([
           CustomSettingMenu(icon: CupertinoIcons.settings, title: "gtd_general".tr),
           CustomSettingMenu(icon: CupertinoIcons.tag, title: "gtd_tags".tr, onPress: () {
-            TagService.instance.showTags();
+            TagService.instance.goShowTagsPage();
           },),
           CustomSettingMenu(icon: CupertinoIcons.calendar, title: "gtd_calendars".tr),
           CustomSettingMenu(icon: CupertinoIcons.drop, title: "gtd_theming".tr),

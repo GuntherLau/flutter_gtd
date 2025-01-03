@@ -29,12 +29,18 @@ class _TagListPageState extends State<TagListPage> {
       appBar: const CustomAppBar(appBarTitleText: 'Tags'),
       body: Stack(alignment: AlignmentDirectional.center, children: [
         Positioned.fill(
-            child: ListView.builder(
+            child: ListView.separated(
                 itemBuilder: (context, index) {
-                  return CustomTagTileWidget(
-                    model: state.tags[index],
-                    mode: TagMode.Edit,
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: CustomTagTileWidget(
+                      model: state.tags[index],
+                      mode: logic.mode,
+                    ),
                   );
+                },
+                separatorBuilder: (context, index) {
+                  return const SizedBox(height: 10);
                 },
                 itemCount: state.tags.length,
             )
@@ -43,7 +49,7 @@ class _TagListPageState extends State<TagListPage> {
             bottom: MediaQuery.of(context).padding.bottom + 50,
             child: FilledButton(onPressed: () {
 
-            }, child: Text(logic.mode == TagMode.Edit ? "Save" : "Add"))
+            }, child: Text(logic.mode == TagMode.Edit ? "Save" : "ADD NEW TAG"))
         )
       ]),
     );
